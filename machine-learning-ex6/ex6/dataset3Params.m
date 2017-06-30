@@ -25,8 +25,8 @@ terror = 1e20;
 
 % (ones(1,8)*0.03).*(3.^(0:7))
 
-for cc=0:8
-    for ss=1:10        
+for cc=0:5
+    for ss=1:5        
         c=0.03*3^cc;
         s=0.05*2^ss;
         model = svmTrain(X, y, c, @(x1, x2) gaussianKernel(x1, x2, s));
